@@ -59,6 +59,12 @@ Vue.filter("categoryStatus", function(value) {
         case 0:
             return "<span class='badge badge-pill badge-light-danger mr-1'>Disable </span>";
             break;
+        case "1":
+            return "<span class='badge badge-pill badge-light-success mr-1'>Active </span>";
+            break;
+        case "0":
+            return "<span class='badge badge-pill badge-light-danger mr-1'>Disable </span>";
+            break;
 
         default:
             return "<span class='badge badge-pill badge-light-danger mr-1'>Disable </span>";
@@ -97,6 +103,12 @@ Vue.filter("isfeatured", function(value) {
         case 0:
             return "<span class='badge badge-pill badge-light-warning mr-1'>unfeatured </span>";
             break;
+        case "1":
+            return "<span class='badge badge-pill badge-light-success mr-1'>Featured </span>";
+            break;
+        case "0":
+            return "<span class='badge badge-pill badge-light-warning mr-1'>unfeatured </span>";
+            break;
 
         default:
             return "<span class='badge badge-pill badge-light-warning mr-1'>unfeatured </span>";
@@ -112,6 +124,15 @@ Vue.filter("orderStatus", function(value) {
             return "<span class='badge badge-pill badge-light-warning mr-1'>Pending </span>";
             break;
         case 0:
+            return "<span class='badge badge-pill badge-light-danger mr-1'>Cancel </span>";
+            break;
+        case "2":
+            return "<span class='badge badge-pill badge-light-success mr-1'>Accepted </span>";
+            break;
+        case "1":
+            return "<span class='badge badge-pill badge-light-warning mr-1'>Pending </span>";
+            break;
+        case "0":
             return "<span class='badge badge-pill badge-light-danger mr-1'>Cancel </span>";
             break;
 
